@@ -1,0 +1,28 @@
+<body class="mat-app-background component-grid-2">
+    <app-selection-grid-panel
+        class="panel"
+        [gridLabels]="gridLabels"
+        [gridItems]="gridTiles"
+        (selectItemEvent)="updateChosenAlignment($event)"
+        (hoverItemEvent)="updateHoveredAlignment($event)">
+    </app-selection-grid-panel>
+
+    <ng-template *ngIf="this.hoveredAlignmentId == ''; then chosenBlockExpo else hoverBlockExpo"></ng-template>
+    <!-- Displays chosen option -->
+    <ng-template #chosenBlockExpo>
+        <app-description-display-panel
+            class="panel"
+            [headerText]="this.chosenAlignmentTitle"
+            [descriptionText]="this.chosenAlignmentDescription">
+        </app-description-display-panel>
+    </ng-template>
+    <!-- Displays hovered option -->
+    <ng-template #hoverBlockExpo>
+        <app-description-display-panel
+            class="panel"
+            [headerText]="this.hoveredAlignmentTitle"
+            [descriptionText]="this.hoveredAlignmentDescription">
+        </app-description-display-panel>
+    </ng-template>
+</body>
+

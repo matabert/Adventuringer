@@ -1,0 +1,53 @@
+<body class="mat-app-background component-grid-3 component-grid-tall-short-row">
+
+    <!-- RACE SELECTION LIST PANEL -->
+    <app-selection-list-panel
+        class="grid-row-span-2 panel"
+        [listHeader]="'Race'"
+        [listItems]="this.raceListItems"
+        (selectItemEvent)="updateChosenRace($event)"
+        (hoverItemEvent)="updateHoveredRace($event)">
+    </app-selection-list-panel>
+
+    <!-- EXPOSITION DESCRIPTION DISPLAY PANEL -->
+    <ng-template class="panel" *ngIf="this.hoveredRaceId == ''; then chosenBlockExpo else hoverBlockExpo"></ng-template>
+    <!-- Displays chosen option -->
+    <ng-template #chosenBlockExpo>
+        <app-description-display-panel
+            [headerText]="this.chosenRaceName"
+            [descriptionText]="this.chosenRaceDescription">
+        </app-description-display-panel>
+    </ng-template>
+    <!-- Displays hovered option -->
+    <ng-template #hoverBlockExpo>
+        <app-description-display-panel
+            [headerText]="this.hoveredRaceName"
+            [descriptionText]="this.hoveredRaceDescription">
+        </app-description-display-panel>
+    </ng-template>
+    
+
+    <!-- FEATURE DISPLAY PANEL -->
+    <ng-template *ngIf="this.hoveredRaceId == ''; then chosenBlockFeature else hoverBlockFeature"></ng-template>
+        <!-- Displays chosen option -->
+        <ng-template #chosenBlockFeature>
+            <app-feature-display-panel
+                class="panel grid-row-span-2"
+                [featureList]="this.getRaceFeatures(this.chosenRaceId, this.racesArray)">
+            </app-feature-display-panel>
+        </ng-template>
+        <!-- Displays hovered option -->
+        <ng-template #hoverBlockFeature>
+            <app-feature-display-panel
+                class="panel grid-row-span-2"
+                [featureList]="this.getRaceFeatures(this.hoveredRaceId, this.racesArray)">
+            </app-feature-display-panel>
+        </ng-template>
+
+        <!-- SUBRACE SELECTION LIST PANEL -->
+        <app-selection-list-panel
+            class="panel"
+            [listHeader]="'Heritage'"
+            [listItems]="subraceListItems">
+        </app-selection-list-panel>
+</body>

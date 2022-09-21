@@ -1,1 +1,111 @@
 /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+html, body { 
+    height: 100%;
+}
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.panel {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.panel-header {
+    text-align: center !important;
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif !important;
+    font-size: 1.25rem !important;
+    margin: 4px 0 4px 0 !important;
+}
+
+mat-horizontal-content-container {
+    padding: 0;
+}
+
+.two-panel-container-element {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.two-panel-left-element {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.two-panel-right-element {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.three-panel-container-element {
+    width: 100%;
+    height: 100%;
+}
+.three-panel-container-element:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.three-panel-left-element {
+    width: 33.33%;
+    height: 100%;
+    float: left;
+}
+
+.three-panel-center-element {
+    width: 33.33%;
+    height: 100%;
+    float: left;
+}
+
+.three-panel-right-element {
+    width: 33.33%;
+    height: 100%;
+    position: relative;
+    float: right;
+}
+
+.component-grid-3 {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+}
+
+.component-grid-tall-short-row {
+    grid-template-rows: 2fr 1fr;
+}
+
+.grid-row-span-2 {
+    grid-row: span 2;
+}
+
+.component-grid:last-child {
+    grid-column: 2;
+    grid-row-start: 2;
+}
+
+.component-grid-2 {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+}
+
+.grid-col-span-3 {
+    grid-column: span 3;
+}

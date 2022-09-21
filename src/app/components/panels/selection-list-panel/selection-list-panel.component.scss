@@ -1,0 +1,18 @@
+
+
+.list-selectable {
+    display: block;
+    list-style: none;
+    padding: 15px 5px 5px 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid gainsboro;
+    margin: 12px 0;
+    font: 400 1.2rem 'Trebuchet MS', sans-serif;
+}
+.list-selectable:hover {
+    background-color: #383838;
+}
+.list-selectable:focus {
+    background-color: #494949;
+}

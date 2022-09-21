@@ -1,0 +1,11 @@
+<h1 class="panel-header">{{this.listHeader}}</h1>
+<mat-divider></mat-divider>
+<mat-selection-list [multiple]="false" *ngFor="let item of listItems; let i = index">
+            <mat-list-option
+                class="list-selectable"
+                [value]="item.name"
+                (click)="selectListItem(i)"
+                (mouseover)="hoverListItem(i)"
+                (mouseout)="hoverListItem(-1)"> {{item.name}}
+            </mat-list-option>
+</mat-selection-list>

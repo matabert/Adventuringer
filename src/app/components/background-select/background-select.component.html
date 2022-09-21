@@ -1,0 +1,43 @@
+<body class="mat-app-background component-grid-3 component-grid-tall-short-row">
+
+    <!-- BACKGROUND SELECTION LIST PANEL -->
+    <app-selection-list-panel
+        class="grid-row-span-2 panel"
+        [listHeader]="'Background'"
+        [listItems]="this.bgListItems">
+    </app-selection-list-panel>
+
+    <!-- BACKGROUND DESCRIPTION DISPLAY PANEL -->
+    <ng-template class="panel" *ngIf="this.hoveredBgId == '' then chosenBlockExpo else hoverBlockExpo"></ng-template>
+    <!-- Displays chosen option -->
+    <ng-template #chosenBlockExpo>
+        <app-description-display-panel
+            [headerText]="this.chosenBgName"
+            [descriptionText]="this.chosenBgDescription">
+        </app-description-display-panel>
+    </ng-template>
+    <!-- Displays hovered option -->
+    <ng-template #hoverBlockExpo>
+        <app-description-display-panel
+            [headerText]="this.hoveredBgName"
+            [descriptionText]="this.hoveredBgDescription">
+        </app-description-display-panel>
+    </ng-template>
+
+    <!-- FEATURE DISPLAY PANEL -->
+    <ng-template *ngIf="this.hoveredBgId == '' then chosenBlockFeature else hoverBlockFeature"></ng-template>
+    <!-- Displays chosen option -->
+    <ng-template #chosenBlockFeature>
+        <app-feature-display-panel 
+            class="panel grid-row-span-2"
+            [featureList]="this.getBgFeatures(this.chosenBgId, this.backgroundsArray)">
+        </app-feature-display-panel>
+    </ng-template>
+    <!-- Displays hovered option -->
+    <ng-template #hoverBlockFeature>
+        <app-feature-display-panel 
+            class="panel grid-row-span-2"
+            [featureList]="this.getBgFeatures(this.hoveredBgId, this.backgroundsArray)"
+        ></app-feature-display-panel>
+    </ng-template>
+</body>

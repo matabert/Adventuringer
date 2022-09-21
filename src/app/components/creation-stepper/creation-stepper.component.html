@@ -1,0 +1,52 @@
+<mat-stepper>
+    <!-- CLASS SELECTION -->
+    <mat-step>
+        <ng-template matStepLabel class="mat-app-background">Class</ng-template>
+        <div>
+            <app-selection-list-panel class="left-element"></app-selection-list-panel>
+            <app-description-display-panel class="right-element"></app-description-display-panel>
+        </div>
+    </mat-step>
+    <!-- RACE SELECTION -->
+    <mat-step>
+        <ng-template matStepLabel class="mat-app-background">Race</ng-template>
+        <app-race-select></app-race-select>
+    </mat-step>
+    <!-- BACKGROUND SELECTION -->
+    <mat-step>
+        <ng-template matStepLabel class="mat-app-background">Background</ng-template>
+        <app-background-select></app-background-select>
+    </mat-step>
+    <!-- ABILITY SCORE ASSIGNMENT -->
+    <mat-step>
+        <ng-template matStepLabel class="mat-app-background">Ability Scores</ng-template>
+        <app-ability-score-allocation></app-ability-score-allocation>
+    </mat-step>
+    <!-- SKILLS & PROFICIENCIES SELECTION -->
+    <mat-step>
+        <ng-template matStepLabel class="mat-app-background">Skills & Proficiencies</ng-template>
+        <div> 
+
+        </div>
+    </mat-step>
+    <!-- ALIGNMENT SELECTION -->
+    <mat-step>
+        <ng-template matStepLabel class="mat-app-background">Alignment</ng-template>
+        <app-alignment-select></app-alignment-select>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel class="mat-app-background">Personal Info</ng-template>
+        <div>
+            
+        </div>
+    </mat-step>
+</mat-stepper>
+
+<!-- <footer>
+    <div class="footerNav">
+        <button mat-button><<</button>
+        <button mat-button>< Back</button>
+        <button mat-button>Next ></button>
+        <button mat-button>>></button>
+    </div>
+</footer> -->

@@ -1,0 +1,75 @@
+[
+
+    {
+        "id": "aln_lg",
+        "nameLong": "lawful good",
+        "nameShort": "LG",
+        "description": [
+            "A lawful good character acts as a good person is expected or required to act. They combine a commitment to oppose evil with the discipline to fight relentlessly. They tell the truth, keep their word, help those in need, and speak out against injustice. A lawful good character hates to see the guilty go unpunished."
+        ]
+    },
+    {
+        "id": "aln_ng",
+        "nameLong": "neutral good",
+        "nameShort": "NG",
+        "description": [
+            "TEMP DESCRIPTION"
+        ]
+    },
+    {
+        "id": "aln_cg",
+        "nameLong": "chaotic good",
+        "nameShort": "CG",
+        "description": [
+            "TEMP DESCRIPTION"
+        ]
+    },
+    {
+        "id": "aln_ln",
+        "nameLong": "lawful neutral",
+        "nameShort": "LN",
+        "description": [
+            "TEMP DESCRIPTION"
+        ]
+    },
+    {
+        "id": "aln_tn",
+        "nameLong": "neutral",
+        "nameShort": "N",
+        "description": [
+            "TEMP DESCRIPTION"
+        ]
+    },
+    {
+        "id": "aln_cn",
+        "nameLong": "chaotic neutral",
+        "nameShort": "CN",
+        "description": [
+            "TEMP DESCRIPTION"
+        ]
+    },
+    {
+        "id": "aln_le",
+        "nameLong": "lawful evil",
+        "nameShort": "LE",
+        "description": [
+            "TEMP DESCRIPTION"
+        ]
+    },
+    {
+        "id": "aln_ne",
+        "nameLong": "neutral evil",
+        "nameShort": "NE",
+        "description": [
+            "TEMP DESCRIPTION"
+        ]
+    },
+    {
+        "id": "aln_ce",
+        "nameLong": "chaotic evil",
+        "nameShort": "CE",
+        "description": [
+            "TEMP DESCRIPTION"
+        ]
+    }
+]

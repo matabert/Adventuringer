@@ -1,0 +1,56 @@
+[
+    {
+        "id": "abs_strength",
+        "nameLong": "strength",
+        "nameShort": "STR",
+        "descriptionLong": [
+            "TEMP-TEXT-LONG"
+        ],
+        "descriptionShort": "Strength measures bodily power, athletic training, and the extent to which you can exert raw physical force."
+    },
+    {
+        "id": "abs_dexterity",
+        "nameLong": "dexterity",
+        "nameShort": "DEX",
+        "descriptionLong": [
+            "TEMP-TEXT-LONG"
+        ],
+        "descriptionShort": "Dexterity measures agility, reflexes and balance."
+    },
+    {
+        "id": "abs_constitution",
+        "nameLong": "constitution",
+        "nameShort": "CON",
+        "descriptionLong": [
+            "TEMP-TEXT-LONG"
+        ],
+        "descriptionShort": "Constitution measures health, stamina, and vital force."
+    },
+    {
+        "id": "abs_intelligence",
+        "nameLong": "intelligence",
+        "nameShort": "INT",
+        "descriptionLong": [
+            "TEMP-TEXT-LONG"
+        ],
+        "descriptionShort": "Intelligence measures mental acuity, accuracy of recall, and the ability to reason."
+    },
+    {
+        "id": "abs_wisdom",
+        "nameLong": "wisdom",
+        "nameShort": "WIS",
+        "descriptionLong": [
+            "TEMP-TEXT-LONG"
+        ],
+        "descriptionShort": "Wisdom reflects how attuned you are to the world around you and represents perceptiveness and intuition."
+    },
+    {
+        "id": "abs_charisma",
+        "nameLong": "charisma",
+        "nameShort": "CHA",
+        "descriptionLong": [
+            "TEMP-TEXT-LONG"
+        ],
+        "descriptionShort": "TEMP-TEXT-SHORT"
+    }
+]
